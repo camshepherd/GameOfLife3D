@@ -1,5 +1,5 @@
 # Game Of Life in 3D
-C++ simulation of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway's_Game_of_Life) in three dimensions using [OpenGL](https://www.opengl.org/) for rendering along with [SFML](https://www.sfml-dev.org/) and [TGUI](https://tgui.eu/) for the front-end.
+C++ simulation of [Conway's Game of Life](https://en.wikipedia.org/wiki/Conway's_Game_of_Life) in three dimensions using [OpenGL](https://www.opengl.org/) for rendering along with [SFML](https://www.sfml-dev.org/) windows and input and the [TGUI](https://tgui.eu/) UI library.
 # Platforms
 This has been tested and built for Windows 7,8, 8.1 and 10 in both 32 and 64-bit varieties. The solution should be able to be built without issue on both Linux and Mac as well due to all dependencies also being cross-platform.
 # About
