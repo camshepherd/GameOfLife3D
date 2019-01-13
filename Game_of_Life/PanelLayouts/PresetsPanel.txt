@@ -1,0 +1,92 @@
+Renderer.1 {
+    backgroundcolor = #F5F5F5;
+    backgroundcolordown = #EBEBEB;
+    backgroundcolorhover = white;
+    bordercolor = #3C3C3C;
+    bordercolordown = black;
+    bordercolorhover = black;
+    borders = (2, 2, 2, 2);
+    textcolor = #3C3C3C;
+    textcolordown = black;
+    textcolorhover = black;
+    texture = None;
+    texturedisabled = None;
+    texturedown = None;
+    texturefocused = None;
+    texturehover = None;
+}
+
+ListBox."theListBox" {
+    ItemHeight = 22;
+    MaximumItems = 0;
+    Position = (0 * &.size, 0.1 * &.size);
+    Size = (1 * &.size, 0.7 * &.size);
+    TextSize = 15;
+
+    Renderer {
+        backgroundcolor = #F5F5F5;
+        backgroundcolorhover = white;
+        bordercolor = black;
+        borders = (2, 2, 2, 2);
+        padding = (0, 0, 0, 0);
+        selectedbackgroundcolor = #006EFF;
+        selectedbackgroundcolorhover = #1E96FF;
+        selectedtextcolor = white;
+        textcolor = #3C3C3C;
+        textcolorhover = black;
+        texturebackground = None;
+    }
+}
+
+EditBox."saveName" {
+    DefaultText = "Name to save preset as...";
+    Position = (0 * &.size, 0.8 * &.size);
+    Size = (1 * &.size, 0.12 * &.size);
+    TextSize = 0;
+
+    Renderer {
+        backgroundcolor = #F5F5F5;
+        backgroundcolorhover = white;
+        bordercolor = #3C3C3C;
+        bordercolorhover = black;
+        borders = (2, 2, 2, 2);
+        caretcolor = black;
+        caretwidth = 1;
+        defaulttextcolor = #A0A0A0;
+        padding = (4, 2, 4, 2);
+        selectedtextbackgroundcolor = #006EFF;
+        selectedtextcolor = white;
+        textcolor = #3C3C3C;
+        texture = None;
+        texturedisabled = None;
+        texturefocused = None;
+        texturehover = None;
+    }
+}
+
+Button."buttonSave" {
+    Position = (0 * &.size, 0.92 * &.size);
+    Size = (0.5 * &.size, 0.08 * &.size);
+    Text = "Save";
+    renderer = &1;
+}
+
+Button."buttonLoad" {
+    Position = (0.5 * &.size, 0.92 * &.size);
+    Size = (0.5 * &.size, 0.08 * &.size);
+    Text = "Load";
+    renderer = &1;
+}
+
+Label."Title" {
+    Size = (&.size, 0.1 * &.size);
+    Text = "Super Title Thing";
+    TextSize = 18;
+
+    Renderer {
+        backgroundcolor = transparent;
+        bordercolor = #3C3C3C;
+        borders = (0, 0, 0, 0);
+        textcolor = #3C3C3C;
+    }
+}

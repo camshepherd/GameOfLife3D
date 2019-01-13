@@ -1,0 +1,107 @@
+Renderer.1 {
+    backgroundcolor = #F5F5F5;
+    backgroundcolordown = #EBEBEB;
+    backgroundcolorhover = white;
+    bordercolor = #3C3C3C;
+    bordercolordown = black;
+    bordercolorhover = black;
+    borders = (2, 2, 2, 2);
+    textcolor = #3C3C3C;
+    textcolordown = black;
+    textcolorhover = black;
+    texture = None;
+    texturedisabled = None;
+    texturedown = None;
+    texturefocused = None;
+    texturehover = None;
+}
+
+Renderer.2 {
+    backgroundcolor = #F5F5F5;
+    backgroundcolorhover = white;
+    bordercolor = #3C3C3C;
+    bordercolorhover = black;
+    borders = (2, 2, 2, 2);
+    caretcolor = black;
+    caretwidth = 1;
+    defaulttextcolor = #A0A0A0;
+    padding = (4, 2, 4, 2);
+    selectedtextbackgroundcolor = #006EFF;
+    selectedtextcolor = white;
+    textcolor = #3C3C3C;
+    texture = None;
+    texturedisabled = None;
+    texturefocused = None;
+    texturehover = None;
+}
+
+Slider."ControllerSlideBar" {
+    Maximum = 10;
+    Minimum = 0;
+    Position = (0.1 * &.size, 0.4 * &.size);
+    Size = (0.8 * &.size, 0.04 * &.size);
+    Value = 0;
+
+    Renderer {
+        bordercolor = #3C3C3C;
+        bordercolorhover = black;
+        borders = (2, 2, 2, 2);
+        texturethumb = None;
+        texturethumbhover = None;
+        texturetrack = None;
+        texturetrackhover = None;
+        thumbcolor = #F5F5F5;
+        thumbcolorhover = white;
+        trackcolor = #F5F5F5;
+        trackcolorhover = white;
+    }
+}
+
+EditBox."ControllerFrameLow" {
+    Position = (0.03 * &.size, 0.4 * &.size);
+    Size = (0.05 * &.size, 0.2 * &.size);
+    TextSize = 0;
+    renderer = &2;
+}
+
+EditBox."ControllerFrameHigh" {
+    Position = (0.92 * &.size, 0.4 * &.size);
+    Size = (0.05 * &.size, 0.2 * &.size);
+    TextSize = 0;
+    renderer = &2;
+}
+
+EditBox."ControllerFrame" {
+    Position = (0.47 * &.size, 0.15 * &.size);
+    Size = (0.06 * &.size, 0.2 * &.size);
+    TextSize = 0;
+    renderer = &2;
+}
+
+Button."ControllerPlay" {
+    Position = (0.3 * &.size, 0.7 * &.size);
+    Size = (0.05 * &.size, 0.2 * &.size);
+    Text = "Play";
+    renderer = &1;
+}
+
+EditBox."ControllerSpeedBox" {
+    Position = (0.36 * &.size, 0.7 * &.size);
+    Size = (0.05 * &.size, 0.2 * &.size);
+    TextSize = 0;
+    renderer = &2;
+}
+
+Button."ControllerFastForward" {
+    Position = (0.42 * &.size, 0.7 * &.size);
+    Size = (0.05 * &.size, 0.2 * &.size);
+    Text = "Speed up";
+    renderer = &1;
+}
+
+Button."ControllerSlowDown" {
+    Position = (0.48 * &.size, 0.7 * &.size);
+    Size = (0.05 * &.size, 0.2 * &.size);
+    Text = "Slow down";
+    renderer = &1;
+}

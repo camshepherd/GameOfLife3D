@@ -1,0 +1,13 @@
+Handler::Handler(name, queue):
+	add queue, name pair to own map
+	Send queue message back up to creator
+	create internal components
+
+Handler::handleMessage(message):
+	on receiving message, forward message to all neighbours, excluding the sender, then process internally for any additional functionality
+	
+GUI components:
+Rules
+Controller
+Menu
+Presets

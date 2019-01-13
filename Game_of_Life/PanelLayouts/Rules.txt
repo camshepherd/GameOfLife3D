@@ -1,0 +1,130 @@
+Renderer.1 {
+    backgroundcolor = #F5F5F5;
+    backgroundcolorhover = white;
+    bordercolor = #3C3C3C;
+    bordercolorhover = black;
+    borders = (2, 2, 2, 2);
+    caretcolor = black;
+    caretwidth = 1;
+    defaulttextcolor = #A0A0A0;
+    padding = (4, 2, 4, 2);
+    selectedtextbackgroundcolor = #006EFF;
+    selectedtextcolor = white;
+    textcolor = #3C3C3C;
+    texture = None;
+    texturedisabled = None;
+    texturefocused = None;
+    texturehover = None;
+}
+
+Renderer.2 {
+    backgroundcolor = transparent;
+    bordercolor = #3C3C3C;
+    borders = (0, 0, 0, 0);
+    textcolor = #3C3C3C;
+}
+
+Label."RulesTitle" {
+    HorizontalAlignment = Center;
+    MaximumTextWidth = 100;
+    Size = (&.size, 22);
+    Text = "Rules";
+    TextSize = 18;
+    renderer = &2;
+}
+
+Label."RulesLabelFertility" {
+    Position = (0, 30);
+    Size = (&.size, 22);
+    Text = "Fertility";
+    TextSize = 18;
+    renderer = &2;
+}
+
+Label."RulesLabelFertilityFl" {
+    AutoSize = true;
+    Position = (0, 60);
+    Size = (16, 22);
+    Text = "Fl";
+    TextSize = 18;
+    renderer = &2;
+}
+
+EditBox."RulesFl" {
+    Position = (40, 60);
+    Size = (60, 30);
+    TextSize = 0;
+    renderer = &1;
+}
+
+Label."RulesLabelFertilityFu" {
+    AutoSize = true;
+    Position = (110, 60);
+    Size = (22, 22);
+    Text = "Fu";
+    TextSize = 18;
+    renderer = &2;
+}
+
+EditBox."RulesFu" {
+    Position = (150, 60);
+    Size = (60, 30);
+    TextSize = 0;
+    renderer = &1;
+}
+
+Label."RulesLabelEnvironment" {
+    Position = (0, 100);
+    Size = (&.size, 22);
+    Text = "Environment";
+    TextSize = 18;
+    renderer = &2;
+}
+
+Label."RulesLabelEnvironmentEl" {
+    AutoSize = true;
+    Position = (0, 130);
+    Size = (17, 22);
+    Text = "El";
+    TextSize = 18;
+    renderer = &2;
+}
+
+EditBox."RulesEl" {
+    Position = (40, 130);
+    Size = (60, 30);
+    TextSize = 0;
+    renderer = &1;
+}
+
+Label."RulesLabelEnvironmentEu" {
+    AutoSize = true;
+    Position = (110, 130);
+    Size = (22, 22);
+    Text = "Eu";
+    TextSize = 18;
+    renderer = &2;
+}
+
+EditBox."RulesEu" {
+    Position = (150, 130);
+    Size = (60, 30);
+    TextSize = 0;
+    renderer = &1;
+}
+
+Label."Label_Size" {
+    AutoSize = true;
+    Position = (230, 100);
+    Size = (37, 22);
+    Text = "Size";
+    TextSize = 18;
+    renderer = &2;
+}
+
+EditBox."Size" {
+    Position = (280, 100);
+    Size = (60, 30);
+    TextSize = 0;
+    renderer = &1;
+}

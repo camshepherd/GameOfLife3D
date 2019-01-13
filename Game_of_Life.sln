@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Game_of_Life", "Game_of_Life\Game_of_Life.vcxproj", "{951AD9B5-BD42-445A-924C-BA5AA0CED698}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		FinalRelease_x64|x64 = FinalRelease_x64|x64
+		FinalRelease_x64|x86 = FinalRelease_x64|x86
+		FinalRelease_x86|x64 = FinalRelease_x86|x64
+		FinalRelease_x86|x86 = FinalRelease_x86|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{951AD9B5-BD42-445A-924C-BA5AA0CED698}.Debug|x64.ActiveCfg = Debug|x64
+		{951AD9B5-BD42-445A-924C-BA5AA0CED698}.Debug|x64.Build.0 = Debug|x64
+		{951AD9B5-BD42-445A-924C-BA5AA0CED698}.Debug|x86.ActiveCfg = Debug|Win32
+		{951AD9B5-BD42-445A-924C-BA5AA0CED698}.Debug|x86.Build.0 = Debug|Win32
+		{951AD9B5-BD42-445A-924C-BA5AA0CED698}.FinalRelease_x64|x64.ActiveCfg = FinalRelease_x64|x64
+		{951AD9B5-BD42-445A-924C-BA5AA0CED698}.FinalRelease_x64|x64.Build.0 = FinalRelease_x64|x64
+		{951AD9B5-BD42-445A-924C-BA5AA0CED698}.FinalRelease_x64|x86.ActiveCfg = FinalRelease_x64|Win32
+		{951AD9B5-BD42-445A-924C-BA5AA0CED698}.FinalRelease_x64|x86.Build.0 = FinalRelease_x64|Win32
+		{951AD9B5-BD42-445A-924C-BA5AA0CED698}.FinalRelease_x86|x64.ActiveCfg = FinalRelease_x86|x64
+		{951AD9B5-BD42-445A-924C-BA5AA0CED698}.FinalRelease_x86|x64.Build.0 = FinalRelease_x86|x64
+		{951AD9B5-BD42-445A-924C-BA5AA0CED698}.FinalRelease_x86|x86.ActiveCfg = FinalRelease_x86|Win32
+		{951AD9B5-BD42-445A-924C-BA5AA0CED698}.FinalRelease_x86|x86.Build.0 = FinalRelease_x86|Win32
+		{951AD9B5-BD42-445A-924C-BA5AA0CED698}.Release|x64.ActiveCfg = Release|x64
+		{951AD9B5-BD42-445A-924C-BA5AA0CED698}.Release|x64.Build.0 = Release|x64
+		{951AD9B5-BD42-445A-924C-BA5AA0CED698}.Release|x86.ActiveCfg = Release|Win32
+		{951AD9B5-BD42-445A-924C-BA5AA0CED698}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44464A93-1CE7-4010-92DB-64FDD7C0A4D8}
+	EndGlobalSection
+EndGlobal

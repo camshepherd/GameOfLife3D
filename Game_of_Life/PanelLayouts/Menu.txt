@@ -1,0 +1,46 @@
+Renderer.1 {
+    backgroundcolor = #F5F5F5;
+    backgroundcolordown = #EBEBEB;
+    backgroundcolorhover = white;
+    bordercolor = #3C3C3C;
+    bordercolordown = black;
+    bordercolorhover = black;
+    borders = (2, 2, 2, 2);
+    textcolor = #3C3C3C;
+    textcolordown = black;
+    textcolorhover = black;
+    texture = None;
+    texturedisabled = None;
+    texturedown = None;
+    texturefocused = None;
+    texturehover = None;
+}
+
+Label."MenuTitle" {
+    HorizontalAlignment = Center;
+    Size = (100%, 5%);
+    Position = (0%, 2%);
+    Text = "Menu";
+    TextSize = 18;
+
+    Renderer {
+        backgroundcolor = transparent;
+        bordercolor = #3C3C3C;
+        borders = (0, 0, 0, 0);
+        textcolor = #3C3C3C;
+    }
+}
+
+Button."MenuButtonClose" {
+    Position = (330, 60);
+    Size = (120, 30);
+    Text = "Close Program";
+    renderer = &1;
+}
+
+Button."MenuButtonBack" {
+    Position = (330, 110);
+    Size = (120, 30);
+    Text = "Back to Simulation";
+    renderer = &1;
+}

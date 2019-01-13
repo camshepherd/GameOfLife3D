@@ -1,0 +1,59 @@
+Event					InputMessage							Result							Output												Internal result
+FileHandler
+						FILE_NAMES_GET [Universe/Rules]			null							FILE_NAMES [Universe/Rules]	[Success/Fail]			refresh list of internal file names
+						FILE_WRITE [Name] [Universe/Rules]		write the universe to file		FILE_WROTE [Universe/Rules] [Name] [Success/Fail]	refresh list of internal file names
+						FILE_READ [Name] [Universe/Rules]		get stream for the chosen file	FILE_OPENED [Universe/Rules] [Name] [Stream] [Success/Fail]					
+						FILE_DELETE [Name] [Universe/Rules]		delete the chosen preset file	FILE_DELETED [Universe/Rule] [Name]	[Success/Fail]	refresh list of internal file names
+
+SimulationHandler
+						FRAME_LIMIT [Time]														Set new Upper frame limit [Time]					set new upper limit
+						FRAME_GET [Time]														FRAME [Frame]										
+						RULES_NEW [Rule]														RULES_CHANGE 										change rules, frame limit = 0
+						RULES_CHANGE [Name] [val]												RULES_CHANGE										change rules, frame limit = 0
+						SIMULATION_NEW [Universe/Rules] [Stream] [Name]							FILE_READING [Name] [Universe/Rules] [Success/Fail]	change rules, frame limit = 0 (on success)
+Rule/limit changed																				FRAME_LIMIT [Time]									upper limit changed
+GUIHandler
+						FRAME_LIMIT [Time]														FRAME_LIMIT [Time]						
+						FRAME_GET [Time]														FRAME_GET [Time]
+						FRAME [Frame]															FRAME [Frame]
+						RULES_NEW [Rule]														RULES_NEW [Rule]
+						RULES_UPDATED [Success/Fail]											RULES_UPDATED
+						RULES_CHANGE [Name] [val]												RULES_CHANGE [Rule] [val]
+						RULES_GET																RULES_GET
+						RULES [Rules]															RULES [Rules]
+						SF_EVENT [sf::Event]					forward to panels				SF_EVENT [sf::Event]
+						SF_EVENT[sf::Event::Close]	
+						CLOSING									destruct all dependents then self
+						PANEL_TOGGLE							toggle the panel
+						
+						
+InputHandler			
+						SF_EVENT[sf::Event::Close]												CLOSING												destruct self
+Mouse click																						SF_EVENT [sf::Event]									
+World movement																					WORLD_MOVEMENT [vector2f amount]						
+Close															Close program					CLOSING												destruct self
+Minimise														Minimise program				
+F-key pressed																					PANEL_TOGGLE [F-number]
+Esc key pressed  												change the state				STATE_CHANGE "Menu"
+PanelHandler
+						SF_EVENT [sf::Event]					send event to each widget		
+						CLOSING																	CLOSING [Name]										destruct self
+RulePanelHandler
+RuleChange																						Change Rules [Rules] [val]							Change internally stored rules
+ControllerPanelHandler
+Frame Changed																					Get Frame [Time]									Internal frame value changed
+Upper Limit changed																				Change Upper Limit [Time]							change frame limit
+PresetPanelHandler
+Load file: [Universe/Rules] [Name]								Load the rules					FILE_READ [Universe/Rules] [Name]					Note trying to load the file 
+						FILE_READING [Name] [Universe/Rules] [Success/Fail]	Report success or failure												Note no longer trying to load the file
+Delete file [Universe/Rules] [Name]																Delete [Universe/Rules] [Name]						Note trying to delete the file
+						FILE_DELETING [Universe/Rules][Name][Success/Fail]	Report success or failure												Note no longer trying to delete the file
+Save file [Universe/Rules][Name]																Write [Universe/Rules][Name][Rule]					Note trying to write the file
+						FILE_WRITING [Universe/Rules][Name][Success/Fail]	Report success or failure												Note no longer to trying to write the file
+MenuPanelHandler
+Settings change													Change the setting in the settings singleton, output that it was updated, store in Settings that it was updated.													
+Handler
+						ShepEvent								Forward to each adjacent handler where handler.name!=Sender 
+RendererHandler
+Frame rendered																					RenderedFrame[Success/Fail]									
+						Frame[Frame]							Render the frame				RenderedFrame[Success/Fail]							
