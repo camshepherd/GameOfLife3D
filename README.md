@@ -5,7 +5,7 @@ This has been tested and built for Windows 7,8, 8.1 and 10 in both 32 and 64-bit
 # About
 Developed using Visual Studio 2017, this was my third year University project. This is a reupload of the project.
 # Documentation
-The project is fully documented through [doxygen](http://doxygen.nl/) and can be found [here]. Upsettingly the creation of the documentation was ultimately totally pointless, but felt necessary to do.
+The project is fully documented, ready for web publishing, through [doxygen](http://doxygen.nl/) and is included in the project. Upsettingly the creation of the documentation was ultimately totally pointless, but felt necessary to do.
 
 # Controls
 1. Use F1-6 keys to hide and show panels.
